@@ -9,11 +9,10 @@ def my_range(n: int):
         yield start
         start += 1
 
-# big_range = range(5)
-big_range = my_range(5)
+big_range = range(5)
+# big_range = my_range(5)
 # _ = input("line 14")
 
-print(next(big_range))
 print("big_range is {} bytes".format(sys.getsizeof(big_range)))
 
 # create a list containing all the values in big_range
